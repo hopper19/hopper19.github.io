@@ -53,14 +53,14 @@ body{
   padding-left: 1%;
 }
 
-.about a{
+.link a{
   text-decoration: none;
   color: grey;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
 
-.about a:hover{
+.link a:hover{
   border-bottom: 2px solid black;
 }
 
