@@ -38,6 +38,11 @@ body{
   border-bottom: 2px solid black;
 }
 
+.about{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .about h2{
   border-left: 5px solid black;
   padding-left: 1%;
@@ -62,38 +67,18 @@ body{
 p{
   display: block;
 }
- /* Desktop */
-@media only screen and (min-width: 501px) {
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
-  .about{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Mobile */
-@media only screen and (max-width: 500px) {
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
-
-.content img {
+.column img {
+  vertical-align: middle;
   filter: brightness(100%) opacity(50%);
   transition: filter 0.5s;
 }
 
-.content img:hover{
+.column img:hover{
   filter: brightness(100%);
 }
