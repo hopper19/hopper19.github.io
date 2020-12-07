@@ -38,11 +38,6 @@ body{
   border-bottom: 2px solid black;
 }
 
-.about{
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
 .about h2{
   border-left: 5px solid black;
   padding-left: 1%;
@@ -68,17 +63,27 @@ p{
   display: block;
 }
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 501px) {
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .about{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about{
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
