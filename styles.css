@@ -98,3 +98,10 @@ p{
 .content img:hover{
   filter: brightness(100%);
 }
+
+.centered img {
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+  width: 55%;
+}
