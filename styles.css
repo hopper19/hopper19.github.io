@@ -74,6 +74,10 @@ p{
     padding-left: 20%;
     padding-right: 20%;
   }
+
+  .picture img {
+    width: 55%;
+  }
 }
 
 /* Mobile View: */
@@ -87,6 +91,10 @@ p{
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .picture img {
+    width: 80%;
+  }
 }
 
 .content img {
@@ -97,11 +105,4 @@ p{
 
 .content img:hover{
   filter: brightness(100%);
-}
-
-.centered img {
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;*/
-  width: 55%;
 }
