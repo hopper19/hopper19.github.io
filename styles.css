@@ -76,7 +76,12 @@ p{
   }
 
   .picture img {
-    width: 55%;
+    width: 95%;
+  }
+
+  .picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
