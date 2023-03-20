@@ -5,53 +5,108 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y6Y8GD18B"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-3Y6Y8GD18B');
+    gtag('config', 'G-3Y6Y8GD18B');
   </script>
-  <meta charset = "utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blank Project</title>
+  <title>AI Robotic Arm</title>
   <link rel="stylesheet" href="../assets/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class = "container">
+  <div class="container">
 
-    <div class = "header">
+    <div class="header">
 
-      <div class = "title">
+      <div class="title">
         <h1>Cuong Nguyen</h1>
       </div>
 
-      <div class = "nav">
+      <div class="nav">
         <a href="../index.html">PROJECTS</a>
         <a href="../about.html">ABOUT ME</a>
       </div>
 
     </div>
 
-    <div class = "about">
-      <h2> Blank Project Page </h2>
+    <div class="about">
+      <h2> Intelligent Robotic Arm </h2>
 
       <p>
-        Just a blank placeholder page
-        <br><br>The Gesture Lock and Dinosaur Game Controller have filled pages if you want to see those!
+        There is a surprisingly large market for prosthetics. There are approximately 30 million potential customers
+        worldwide.
+        And the demand for prosthetic limbs is expected to increase in the coming years, with an estimated 3.6 million
+        people in
+        the United States alone projected to have limb loss by 2050. Unfortunately, current products are often
+        expensive,
+        with costs ranging from $31,129 for a unilateral upper limb to $453,696 for multiple limb loss, according to the
+        Department of Veteran Affairs.
       </p>
+      <p>
+        Even though a person may have lost a limb, the brain functions to perform actions with that limbs are still
+        available.
+        This allows the team to train a machine-learning algorithm that correlates certain signal patterns with
+        corresponding
+        intended arm movements. The team aims to develop an intelligent prosthetic arm that strikes a balance between
+        usability,
+        complexity, and affordability.
+      </p>
+      <h3> Project Overview </h3>
+      <p>
+        The arm can be divided into three separate systems:</p>
+      <ul>
+        <li>Sensor: sensing components and digital signal processing (DSP) units that provide denoised activation
+          signals coming
+          directly from the brain neurons and muscle fibers.</li>
+        <li>Processor: a single board computer (SBC) that runs a machine learning algorithm on the sensor data, guesses
+          the
+          intended arm movement, and forwards it as a command to the robotic arm.</li>
+        <li>Actuator: the physical robotic arm and its accompanying control circuits executing the main processor’s
+          command.</li>
+      </ul>
+      <p>Team members: Cuong Nguyen, Joseph Tholley, Francis Lynch, Tyler Jordan, Gaetano Ippolito, John Cafferky.</p>
 
-      <h3> Project Pages </h3>
-      <p>Includes documentation, code, and schematics. Click either of these links:</p>
-      <div class = "link">
-        <a href="https://www.hackster.io/cuongvnus2001" target="_blank">Hackster<br></a>
-      </div>
+      <h3>Actuators</h3>
+      <img src="../files/images/big_arm_og.jpg" alt="Big arm" width="70%" height="auto">
+      <p>This big arm setup is passed to the team from previous graduates. The robot is to scale with a real human arm.
+        To improve our skills, the team created a smaller version. We construct the higher level frameworks with this
+        smaller system, then scale them up for the larger arm.</p>
+      <img src="../files/images/small_arm.jpg" alt="Model arm used for testing" width="70%" height="auto">
 
-      <h3> Video</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+      <h3>Sensors</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HUoOzsGGoaQ" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <p>Joseph Tholley demonstrates the use of EKG equipment to observe the brain activities through bioelectrical
+        signal
+        collection.</p>
+
+      <h3>Processor</h3>
+      <p>This system uses a Long Short-Team Memory neural network to interpret the bioelectrical data as arm
+        movemements. The model will mirror a ConvLSTM exercise. The exercise asks the programmer to implement a ConvLSTM
+        model that interpret data collected by a phone attached to a body. The data includes information from the
+        phone's accelerometer and gyroscope. The results include 6 common human activities: sitting, walking, walking
+        upstairs, walking downstairs, laying, standing.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XOEN9W05_4A" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <figure>
+        <img src="../files/images/lstm_model.png" alt="ConvLSTM model" width="70%" height="auto">
+        <figcaption>Final ConvLSTM model</figcaption>
+      </figure>
+      <figure>
+        <img src="../files/images/lstm_results.png" alt="ConvLSTM model" width="70%" height="auto">
+        <figcaption>Accuracy and Standard Deviation of the Model</figcaption>
+      </figure>
     </div>
 
   </div>
