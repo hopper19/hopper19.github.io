@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y6Y8GD18B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3Y6Y8GD18B');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicromouseSim</title>
+  <link rel="stylesheet" href="../assets/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+
+      <div class="title">
+        <h1>Cuong Nguyen</h1>
+      </div>
+
+      <div class="nav">
+        <a href="../index.html">PROJECTS</a>
+        <a href="../about.html">ABOUT ME</a>
+      </div>
+
+    </div>
+
+    <div class="about">
+      <h2> Micromouse Simulator App </h2>
+
+      <p>
+        Matt Burns, ’20 and I were on the same IEEE SAC team to write the software for a micromouse. While waiting on
+        other
+        members to construct the robot’s physical body, we developed many simple Python programs in order to test
+        multiple
+        implementations of the path finding algorithm. However, those programs lack a graphical interface; all outputs
+        could
+        only be viewed through the aesthetically unpleasing black-and-white console. Furthermore, every implementation
+        required
+        a whole new Python script. We did not have a logical interface through which we could simply execute the desired
+        algorithm without rewriting the script from scratch. I proposed to Matt that I develop a stand-alone computer
+        application as a side project to solve these problems.
+      </p>
+      <p>
+        When the COVID-19 pandemic hit in March 2020, we could no longer physically run the robot, without access to the
+        eight-by-eight square foot maze on campus. The unfavorable situation motivated my effort even further. After one
+        month,
+        the Micromouse Simulator was a functional app for our own use. The app is based on the Python Tkinter library.
+        It
+        possesses a minimalistic interface with a minimal number of buttons and displays. It does not require a separate
+        Python
+        installation on the computer. All instructions for the app are packaged together with the app itself. Users can
+        write a
+        one-file script using the given template, which significantly reduces the time needed for a new algorithm’s
+        development,
+        visualization, and testing. Users can use the same template to write another short script for a different
+        algorithm.
+        Moreover, they would be able to interactively select which algorithm to test from within the app. There is a
+        built-in
+        random maze generator which, as its name suggests, randomly generates a maze so that the users can test the
+        algorithm
+        against all possible maze configurations. When a user presses the “Start Navigation” button, a diamond shape,
+        which
+        represents the micromouse will start to move according to the user’s algorithm, as if it is the real micromouse.
+      </p>
+      <p>
+        After the Spring 2020 semester was over, I thought the app might also be very useful for students of ENGR 150 in
+        which
+        students were introduced to, and competed in the Micromouse project, so I continued the app’s development to
+        suit that
+        purpose. As of now, the app’s “Custom Mode” allows user to design, save, and retrieve their own maze designs.
+        That means
+        that anyone can test their algorithm against a specific maze configuration to determine whether the algorithm is
+        adequate for every possible situation. On the other hand, professors now have a means to digitally design the
+        maze for
+        the ENGR 150 competition if they choose to do so.
+      </p>
+      <p>
+        Beyond the scope of the Micromouse project, the development of the app encouraged me to learn more about the
+        programming
+        language Python, algorithms, and data structures. For example, I had to determine the best presentation of a
+        sixteen-by-sixteen maze that is comprehensible for a human being, and efficient for a computer. Obviously, I
+        also
+        further honed my skills as an app developer. In fact, a lot of the new knowledge I learned was reviewed and
+        elaborated
+        upon in my current computer science class, Data Structures and Algorithms.
+      </p>
+
+      <h3> Project Pages </h3>
+      <p>Includes documentation, code, and user guide.</p>
+      <div class="link">
+        <a href="https://github.com/hopper19/Micromouse-App" target="_blank">GitHub: hopper19/Micromouse-App</a>
+      </div>
+
+      <h3>Demo Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Pezfto3N0HQ" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+  </div>
+</body>
+
+</html>

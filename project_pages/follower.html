@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y6Y8GD18B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3Y6Y8GD18B');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Follower</title>
+  <link rel="stylesheet" href="../assets/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+
+      <div class="title">
+        <h1>Cuong Nguyen</h1>
+      </div>
+
+      <div class="nav">
+        <a href="../index.html">PROJECTS</a>
+        <a href="../about.html">ABOUT ME</a>
+      </div>
+
+    </div>
+
+    <div class="about">
+      <h2>Line Follower</h2>
+
+      <p>
+        Different variations of line follower robots whose task is to smoothly and accurately follow a black line on a
+        white background.
+      </p>
+
+      <h3>FPGA-based Line Follower</h3>
+      <p>This system is based on the DE-10 Lite board by Terasic, which has a MAX 10 Intel FPGA at its heart.</p>
+      <h4>Demo Video</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5zItv1u5jNw" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+      <h3>EV3-based Real Time Systems with leJOS</h3>
+      <p>This system utilizes the LEGO EV3 platform as the processing unit. The builtin OS is replaced with leJOS. The
+        robot uses PID control to maintain its alignment with the line.</p>
+      <h4>Demo Video</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/on0IdByqlTk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+      <h3>AWD (All Wheel Drive) Car</h3>
+      <p>This system uses the same processing system as the previous robot. However, the mechanical component of the
+        robot is built similar to a real life car. The car is powered by two motors. There are a total of three
+        differentials. One distributes the power to the front and rear axle. The remaining two distribute the power
+        between wheels on the same axle.</p>
+      <img src="../files/images/AWD.jpg" alt="All Wheel Drive Car" width="70%" height="auto">
+    </div>
+
+  </div>
+</body>
+
+</html>
